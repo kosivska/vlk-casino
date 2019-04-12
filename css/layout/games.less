@@ -1,0 +1,152 @@
+.games {
+	padding: 4%;
+
+	.games__categories {
+		margin-bottom: 11%;
+
+		.games__list {
+			display: flex;
+			justify-content: space-between;
+
+			.games__menuItem {
+				.games__tab {
+					width: 206px;
+					height: 79px;
+					background: #383b4e;
+					-webkit-transform: skew(-23deg);
+					-moz-transform: skew(-23deg);
+					-o-transform: skew(-23deg);
+					transform: skew(-23deg);
+
+					&:hover {
+						cursor: pointer;
+						font-weight: bold;
+						background-image: linear-gradient(360deg, #f9b328 0%, #fb801d 50%, #ff0000 100%);
+					}
+
+					.categories__name {
+						height: 100%;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						-webkit-transform: skew(23deg);
+						-moz-transform: skew(23deg);
+						-o-transform: skew(23deg);
+						transform: skew(23deg);
+
+						.tabs__name {
+							font-size: 16px;
+						}
+
+						.tab__icon {
+							margin-right: 4%;
+							display: block;
+							background: url('../img/tab_sprites.png') no-repeat;
+							background-size: 88px 61px;
+							width: 22px;
+							height: 24px;
+						}
+
+						.slots__icon {
+							background-position: -4px -34px;
+						}
+
+						.blackjack__icon {
+							background-position: -30px -34px;
+						}
+
+						.roulette__icon {
+							background-position: -64px -2px;
+						}
+
+						.baccarat__icon {
+							background-position: -35px -2px;
+						}
+
+						.poker__icon {
+							background-position: -4px -3px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.preview {
+		.preview__info {
+			padding: 20%;
+			text-align: center;
+			font-size: 20px;
+		}
+
+		.preview__hover {
+			display: none;
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+
+			.hover__buttons {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				height: 100%;
+				&:hover {
+					cursor: pointer;
+				}
+			}
+
+			.btn-demo {
+				padding: 15px 38px;
+				margin-bottom: 22%;
+			}
+
+			.btn__money {
+				padding: 15px 22px;
+			}
+
+			.hover-btn {
+				.btn;
+				border: none;
+				background-color: white;
+
+				.hover__text {
+					font-size: 10px;
+					.link__decoration;
+					color: #b71c1c;
+					text-transform: uppercase;
+					font-weight: bold;
+				}
+			}
+		}
+
+		.game-preview {
+			position: relative;
+
+			.preview__img {
+				max-width: 100%;
+				width: 100%;
+				transition: .15s ease-in-out;
+			}
+
+			&:hover {
+				box-shadow: 0 0 10px 0 #efdcb8 inset, 0 0 10px 4px #f1daad;
+				border-radius: 8px;
+
+				.preview__hover {
+					display: block;
+					position: absolute;
+					z-index: 999;
+				}
+			}
+		}
+	}
+
+	.game-grid {
+		display: grid;
+		grid-template-columns: 191px 191px 191px 191px 191px;
+		grid-gap: 2vw;
+	}
+}

@@ -1,0 +1,55 @@
+.info__slider {
+	.carousel {
+		.slick-dots li.slick-active button:before{
+			width: 9px;
+			height: 9px;
+			opacity: 1;
+			border: 2px solid red;
+		}
+		width: 100%;
+		div {
+			padding: 3px;
+		}
+		.info__title {
+			font-size: 25px;
+			font-weight: 900;
+			margin-bottom: 2.5%;
+			.slider__link:hover {
+				color: @hoverlink;
+			}
+		}
+	}
+	.title {
+		font-size: 11px;
+		font-weight: 100;
+		margin-bottom: 0.5%;
+	}
+	.content {
+		font-size: 11px;
+		font-weight: 100;
+		line-height: 16px;
+		margin-bottom: 2%;
+	}
+}
+.slick-dots li {
+	width: 9px;
+	height: 17px;
+	button {
+		margin-right: 40px;
+		width: 0px;
+		height: 0px;
+		&:before{
+			opacity: 1;
+			color: white;
+			font-size: 0px;
+			width: 11px;
+			height: 11px;
+			background-color: white;
+			border-radius: 20px;
+		}
+		&:hover:before{
+			border: 2px solid red;
+			border-radius: 20px;
+		}
+	}
+}
