@@ -1,6 +1,22 @@
 .wrapper {
 	max-width: 1064px;
 	margin: 0 auto;
+	
+	@media (max-width: 800px) {
+		max-width: 620px;
+	}
+	@media (min-width: 960px) and (max-width: 1030px) {
+		max-width: 792px;
+	}
+	@media (min-width: 1040px) and (max-width: 1200px) {
+		max-width: 907px;
+	}
+	@media (min-width: 1400px) and (max-width: 1890px) {
+		max-width: 1302px;
+	}
+	@media (min-width: 1900px) {
+		max-width: 1504px;
+	}
 }
 
 .link__decoration {

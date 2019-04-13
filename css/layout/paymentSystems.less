@@ -1,8 +1,45 @@
 .paymentSystems {
 	    padding: 4% 0;
+	    overflow: hidden;
+	    @media (min-width: 1900px) {
+		padding: 0 0 4% 0;
+	}
 	.paymentSystems__list {
 		display: flex;
     justify-content: space-between;
     align-items: center;
+    .payment_paypal {
+@media (min-width: 1900px) {
+		width: 146px;
+	}
+    }
+    .payment_mastercard {
+@media (min-width: 1900px) {
+		width: 86px;
+	}
+    }
+    .payment_mir {
+@media (min-width: 1900px) {
+		width: 214px;
+	}
+    }
+    .payment_maestro {
+@media (min-width: 1900px) {
+		width: 86px;
+	}
+    }
+    .payment_yandex {
+@media (min-width: 1900px) {
+		width: 144px;
+	}
+    }
+    .payment_visa {
+@media (min-width: 1900px) {
+		width: 97px;
+	}
+    }
+	}
+	@media (max-width: 640px) {
+		display: none;
 	}
 }
